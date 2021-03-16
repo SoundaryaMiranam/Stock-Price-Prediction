@@ -27,10 +27,10 @@ from textblob import TextBlob
 from textblob.sentiments import NaiveBayesAnalyzer # Importing the NaiveBayesAnalyzer classifier from NLTK
 
 # keys and tokens from the Twitter Dev Console 
-consumer_key = 'E1dgD8kVCkg6yoKItJEa7WmGx'
-consumer_secret = 'Y7zfoQWgvsvlDlv3wyExBMxsbzHxTd6CmFTVs48lbHPu1yvSNa'
-access_token = '1347140082969427972-UfhlEK0NFYS0LNSBw4SRIbvDNBxMew'
-access_token_secret = 'SrGsSr8F93etrqXTRimOy1z6FCXSspC64JzOLyrosTond'
+consumer_key = '****************************'
+consumer_secret = '************************************************'
+access_token = '*************************************************'
+access_token_secret = '*********************************************'
 
 # attempt authentication 
 try: 
