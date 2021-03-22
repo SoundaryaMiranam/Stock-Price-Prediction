@@ -9,13 +9,11 @@ import sys
 import pandas as pd
 import numpy as np
 
-from keras.models import Sequential
-from keras.layers import Dense
-
 import tensorflow as tf
 from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense
 from tensorflow.keras.layers import LSTM
+from tensorflow.keras.layers import Dropout
 
 # keys and tokens from the Twitter 
 consumer_key = '*************************************'
@@ -107,8 +105,11 @@ def stock_prediction():
    # dense layer is a layer of neurons where each neuron of this layer is connected to each neuron of next layer
    # add dense layer of output shape (*,8) and input having 1 column
    model.add(LSTM(50,return_sequences=True,input_shape=(100,1)))
+   model.add(Dropout(0.2))
    model.add(LSTM(50,return_sequences=True))
+   model.add(Dropout(0.2))
    model.add(LSTM(50))
+   model.add(Dropout(0.2))	
    model.add(Dense(1))   
    model.compile(loss='mean_squared_error', optimizer='adam')
    # train in batches of 2 in 100 epochs 
