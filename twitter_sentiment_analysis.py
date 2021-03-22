@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 """
 Twitter API
 1. Register for the Twitter API https://apps.twitter.com/
