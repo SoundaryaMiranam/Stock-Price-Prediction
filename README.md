@@ -19,3 +19,6 @@ If you are further interested in the project checkout this link [here](https://w
 *   keras (https://keras.io/)
 
 Before you go and run the code, Install all dependencies and also make an application on twitter dev page and get your keys for authentication.
+
+# Thanks
+Let me know of more updates you'd like to see.
