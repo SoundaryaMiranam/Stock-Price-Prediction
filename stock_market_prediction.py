@@ -8,6 +8,7 @@ import os
 import sys
 import pandas as pd
 import numpy as np
+import datetime
 
 import tensorflow as tf
 from tensorflow.keras.models import Sequential
@@ -37,7 +38,8 @@ query = input("Please enter a stock quote from the CSV to perform the search: ")
 def stock_sentiment(quote, num_tweets):
     # Checks if the sentiment for our quote is
     # positive or negative, returns True if
-     list_of_tweets = api.search(quote, count=num_tweets)
+     date_since = (datetime.datetime.now() - datetime.timedelta(days=30)).date()
+     list_of_tweets = api.search(quote, count=num_tweets, lang ="en", since = date_since, tweet_mode = "extended")
      
      polarity = 0
      positive = 0
