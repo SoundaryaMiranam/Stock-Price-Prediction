@@ -9,7 +9,7 @@ Well before the use of Deep Learning in the field of stock prediction, the proce
 # Purpose:
 The purpose of this project is to predict closing prices of stocks using twitter tweet's from various users and historical data from yahoo finance, using Deep Learning model, Long-Short Term Memory (LSTM) neural network.
 
-If you are further interested in the project checkout this link [here](https://www.ijariit.com/manuscript/stock-market-prediction-using-rnn-and-sentiment-analysis/).
+If you are further interested in the other projects checkout this link [here](https://www.ijariit.com/).
 
 # Dependencies:
 
